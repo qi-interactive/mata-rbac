@@ -1,0 +1,6 @@
+{
+    "name": "Role Base Access Control",
+    "description": "Manages RBAC for MATA",
+    "icon" : "/images/module-icon.svg",
+    "version" : 1.0
+}

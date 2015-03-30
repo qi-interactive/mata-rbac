@@ -1,6 +1,6 @@
 <?php
 
-namespace mdm\admin\components;
+namespace mata\rbac\components;
 
 use Yii;
 use yii\db\Connection;
@@ -24,7 +24,7 @@ use yii\helpers\ArrayHelper;
  * or use [[\Yii::$container]]
  * 
  * ~~~
- * Yii::$container->set('mdm\admin\components\Configs',[
+ * Yii::$container->set('mata\rbac\components\Configs',[
  *     'db' => 'customDb',
  *     'menuTable' => 'admin_menu',
  * ]);

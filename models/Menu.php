@@ -1,9 +1,9 @@
 <?php
 
-namespace mdm\admin\models;
+namespace mata\rbac\models;
 
 use Yii;
-use mdm\admin\components\Configs;
+use mata\rbac\components\Configs;
 
 /**
  * This is the model class for table "menu".

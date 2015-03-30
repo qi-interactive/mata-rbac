@@ -1,15 +1,15 @@
 <?php
 
-namespace mdm\admin\controllers;
+namespace mata\rbac\controllers;
 
-use mdm\admin\models\AuthItem;
-use mdm\admin\models\searchs\AuthItem as AuthItemSearch;
+use mata\rbac\models\AuthItem;
+use mata\rbac\models\searchs\AuthItem as AuthItemSearch;
 use matacms\controllers\base\AuthenticatedController as Controller;
 use yii\web\NotFoundHttpException;
 use yii\filters\VerbFilter;
 use yii\rbac\Item;
 use Yii;
-use mdm\admin\components\MenuHelper;
+use mata\rbac\components\MenuHelper;
 use yii\web\Response;
 use yii\helpers\Html;
 

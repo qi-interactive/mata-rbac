@@ -1,14 +1,14 @@
 <?php
 
-namespace mdm\admin\controllers;
+namespace mata\rbac\controllers;
 
 use Yii;
-use mdm\admin\models\Menu;
-use mdm\admin\models\searchs\Menu as MenuSearch;
+use mata\rbac\models\Menu;
+use mata\rbac\models\searchs\Menu as MenuSearch;
 use matacms\controllers\base\AuthenticatedController as Controller;
 use yii\web\NotFoundHttpException;
 use yii\filters\VerbFilter;
-use mdm\admin\components\MenuHelper;
+use mata\rbac\components\MenuHelper;
 
 /**
  * MenuController implements the CRUD actions for Menu model.

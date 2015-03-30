@@ -1,6 +1,6 @@
 <?php
 
-namespace mdm\admin;
+namespace mata\rbac;
 
 /**
  * AdminAsset

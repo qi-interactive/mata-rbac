@@ -1,15 +1,15 @@
 <?php
 
-namespace mdm\admin\controllers;
+namespace mata\rbac\controllers;
 
 use Yii;
-use mdm\admin\models\Route;
-use mdm\admin\components\MenuHelper;
+use mata\rbac\models\Route;
+use mata\rbac\components\MenuHelper;
 use yii\caching\TagDependency;
 use yii\web\Response;
 use yii\helpers\Html;
-use mdm\admin\components\RouteRule;
-use mdm\admin\components\Configs;
+use mata\rbac\components\RouteRule;
+use mata\rbac\components\Configs;
 use yii\helpers\Inflector;
 use matacms\controllers\base\AuthenticatedController as Controller;
 use yii\helpers\VarDumper;

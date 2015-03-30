@@ -1,14 +1,14 @@
 <?php
 
-namespace mdm\admin\controllers;
+namespace mata\rbac\controllers;
 
 use Yii;
-use mdm\admin\models\BizRule;
+use mata\rbac\models\BizRule;
 use matacms\controllers\base\AuthenticatedController as Controller;
-use mdm\admin\models\searchs\BizRule as BizRuleSearch;
+use mata\rbac\models\searchs\BizRule as BizRuleSearch;
 use yii\filters\VerbFilter;
 use yii\web\NotFoundHttpException;
-use mdm\admin\components\MenuHelper;
+use mata\rbac\components\MenuHelper;
 
 /**
  * Description of RuleController

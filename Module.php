@@ -1,6 +1,6 @@
 <?php
 
-namespace mdm\admin;
+namespace mata\rbac;
 
 use Yii;
 use yii\helpers\Inflector;
@@ -15,7 +15,7 @@ use yii\helpers\Inflector;
  * 'layout' => 'left-menu', // default to null mean use application layout.
  * 'controllerMap' => [
  *     'assignment' => [
- *         'class' => 'mdm\admin\controllers\AssignmentController',
+ *         'class' => 'mata\rbac\controllers\AssignmentController',
  *         'userClassName' => 'app\models\User',
  *         'idField' => 'id'
  *     ]
@@ -36,7 +36,7 @@ use yii\helpers\Inflector;
  * @author Misbahul D Munir <misbahuldmunir@gmail.com>
  * @since 1.0
  */
-class Module extends \yii\base\Module
+class Module extends \mata\base\Module
 {
     /**
      * @inheritdoc
@@ -98,8 +98,8 @@ class Module extends \yii\base\Module
         //user did not define the Navbar?
         if ($this->navbar === null) {
             $this->navbar = [
-                ['label' => Yii::t('rbac-admin', 'Help'), 'url' => 'https://github.com/mdmsoft/yii2-admin/blob/master/docs/guide/basic-usage.md'],
-                ['label' => Yii::t('rbac-admin', 'Application'), 'url' => Yii::$app->homeUrl]
+                ['label' => 'Help', 'url' => 'https://github.com/mdmsoft/yii2-admin/blob/master/docs/guide/basic-usage.md'],
+                ['label' => 'Application', 'url' => Yii::$app->homeUrl]
             ];
         }
     }
@@ -152,5 +152,9 @@ class Module extends \yii\base\Module
     {
         $this->_menus = array_merge($this->_menus, $menus);
         $this->_normalizeMenus = null;
+    }
+
+    public function getNavigation() {
+        return false;
     }
 }

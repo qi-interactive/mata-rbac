@@ -1,15 +1,15 @@
 <?php
 
-namespace mdm\admin\controllers;
+namespace mata\rbac\controllers;
 
 use Yii;
-use mdm\admin\models\Assignment;
-use mdm\admin\models\searchs\Assignment as AssignmentSearch;
+use mata\rbac\models\Assignment;
+use mata\rbac\models\searchs\Assignment as AssignmentSearch;
 use matacms\controllers\base\AuthenticatedController as Controller;
 use yii\web\NotFoundHttpException;
 use yii\filters\VerbFilter;
 use yii\helpers\Html;
-use mdm\admin\components\MenuHelper;
+use mata\rbac\components\MenuHelper;
 use yii\web\Response;
 use yii\rbac\Item;
 

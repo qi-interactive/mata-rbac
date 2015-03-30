@@ -1,6 +1,6 @@
 <?php
 
-namespace mdm\admin\controllers;
+namespace mata\rbac\controllers;
 
 use matacms\controllers\base\AuthenticatedController as Controller;
 
