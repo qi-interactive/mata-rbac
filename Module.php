@@ -141,6 +141,11 @@ class Module extends \mata\base\Module
                 }
             }
         }
+
+        foreach($this->_normalizeMenus as &$menu) {
+            $menu["icon"] = "s";
+        }
+
         return $this->_normalizeMenus;
     }
 
@@ -155,6 +160,16 @@ class Module extends \mata\base\Module
     }
 
     public function getNavigation() {
-        return false;
+
+        $uniqueId = $this->getUniqueId();
+
+        return [
+            ['url' => "/mata-cms/$uniqueId/assignment", 'icon' => '/images/module-icon.svg', 'label' => "Assignments"],
+            ['url' => "/mata-cms/$uniqueId/role", 'icon' => '/images/module-icon.svg', 'label' => "Roles"],
+            ['url' => "/mata-cms/$uniqueId/permission", 'icon' => '/images/module-icon.svg', 'label' => "Permissions"],
+            ['url' => "/mata-cms/$uniqueId/route", 'icon' => '/images/module-icon.svg', 'label' => "Routes"],
+            ['url' => "/mata-cms/$uniqueId/rule", 'icon' => '/images/module-icon.svg', 'label' => "Rules"],
+
+        ];
     }
 }
