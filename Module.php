@@ -88,20 +88,6 @@ class Module extends \mata\base\Module
     public function init()
     {
         parent::init();
-        if (!isset(Yii::$app->i18n->translations['rbac-admin'])) {
-            Yii::$app->i18n->translations['rbac-admin'] = [
-                'class' => 'yii\i18n\PhpMessageSource',
-                'sourceLanguage' => 'en',
-                'basePath' => '@mdm/admin/messages'
-            ];
-        }
-        //user did not define the Navbar?
-        if ($this->navbar === null) {
-            $this->navbar = [
-                ['label' => 'Help', 'url' => 'https://github.com/mdmsoft/yii2-admin/blob/master/docs/guide/basic-usage.md'],
-                ['label' => 'Application', 'url' => Yii::$app->homeUrl]
-            ];
-        }
     }
 
     /**
